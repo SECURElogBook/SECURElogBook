@@ -6,6 +6,13 @@
     <title>My Awesome Website</title>
     <style>
         /* Add your CSS styles here */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
         .logo {
             width: 300px;
             height: 300px;
@@ -23,26 +30,28 @@
     </style>
 </head>
 <body>
-    <div class="logo">
-        <!-- Your logo image goes here -->
-        <!-- Replace the src attribute with the actual path to your logo image -->
-        <img src="SecureLogBook_Logo.jpg" alt="Logo">
-    </div>
-    <div class="description">
-        <!-- Add your description text here -->
-        <p>This is an awesome website with a cool logo!</p>
-    </div>
-    <div class="video">
-        <!-- Add your embedded YouTube video here -->
-        <!-- Replace the src attribute with the actual YouTube video embed code -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="link">
-        <!-- Add your website links here -->
-        <p><a href="https://www.website1.com">Website 1</a></p>
-        <p>This is a great website for all your needs!</p>
-        <p><a href="https://www.website2.com">Website 2</a></p>
-        <p>Another awesome website you should check out!</p>
+    <div class="container">
+        <div class="logo">
+            <!-- Your logo image goes here -->
+            <!-- Replace the src attribute with the actual path to your logo image -->
+            <img src="SecureLogBook_Logo.jpg" alt="Logo">
+        </div>
+        <div class="description">
+            <!-- Add your description text here -->
+            <p>This is an awesome website with a cool logo!</p>
+        </div>
+        <div class="video">
+            <!-- Add your embedded YouTube video here -->
+            <!-- Replace the src attribute with the actual YouTube video embed code -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="link">
+            <!-- Add your website links here -->
+            <p><a href="https://www.website1.com">Website 1</a></p>
+            <p>This is a great website for all your needs!</p>
+            <p><a href="https://www.website2.com">Website 2</a></p>
+            <p>Another awesome website you should check out!</p>
+        </div>
     </div>
 </body>
 </html>
