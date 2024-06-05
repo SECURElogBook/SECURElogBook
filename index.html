@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Image</title>
     <style>
         body {
             display: flex;
@@ -11,32 +12,42 @@
             height: 100vh;
             margin: 0;
         }
-        img {
-            width: 300px;
-            height: 300px;
+        .center {
+            text-align: center;
         }
-        a {
-            font-size: 18px;
-            font-weight: bold;
+        .image-container {
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+        }
+        .links a {
+            margin: 0 10px;
             text-decoration: none;
             color: #333;
         }
     </style>
 </head>
 <body>
-    <p>
-        <div id="outer" style="display: flex; justify-content: center;">
-
-        <img src="SecureLogBook_Logo.jpg"><br>
-        <a href="https://ingles-website.com">
-            <span style="font-size: 4.0em;">English</span>
-        </a>
-         <span style="font-size: 4.5em;">|</span>
-        <a href="https://espanol-website.com">
-            <span style="font-size: 4.0em;">Spanish</span>
-        </a>
-            
+    <div class="center">
+        <div class="image-container">
+            <img src="SecureLogBook_Logo.jpg" alt="Centered Image">
         </div>
-    </p>
+        <div class="links">
+            <a href="https://ingles-website.com">
+                <span style="font-size: 4.0em;">English</span>
+            </a>
+             <span style="font-size: 4.5em;">|</span>
+            <a href="https://espanol-website.com">
+                <span style="font-size: 4.0em;">Spanish</span>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
