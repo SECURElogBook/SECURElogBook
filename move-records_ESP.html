@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <style>
+        
+        body {
+          font-family: "Arial", sans-serif;
+		  font-size: 150%;
+        }
+        
+        div.a {
+          text-align: center;
+        }
+        
+        div.b {
+          text-align: left;
+        }
+        
+        div.c {
+          text-align: right;
+        } 
+        
+        div.d {
+          text-align: justify;
+        }
+        
+        .responsive {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+
+        .times-section {
+            font-family: "Times New Roman", serif;
+        }
+        
+    </style>
+    
+    <body>
+        <div class="b">
+			<span style="font-size: 1.5em;"> <a href="https://securelogbook.github.io/SECURElogBook/web-english.html">⏮</a></span>
+			<span style="font-size: 2.0em;"><u><b>8. Cómo mover registros/programación de tareas</b></u></span> <br>
+			<br>
+			<i>
+			Con SECURElogBook puedes programar tareas fácilmente, rápido y con perfección, porque tiene funciones dedicadas para hacer exactamente eso. <br>
+			<br>
+			Primero, necesito explicarte algunos conceptos que permiten a la aplicación hacer eso y más. Recuerda que SECURElogBook no es una simple lista de tareas pendientes. Es una herramienta flexible que te ayuda a recordar todo y gestionar tu tiempo. Pero también, gracias al sistema de búsqueda, te permite aprender de los datos que creas para mejorar cada día. <br>
+			<br>
+			Para explicar las funciones que permiten a SECURElogBook mover tareas sin problemas en segundos, veamos este ejemplo donde estamos editando el registro "Pasado - No completado": <br>
+			<img src="pics/Same-record-list_ESP.png" class="responsive"/> <br>
+			<br>
+			La pequeña lista de registros (C) mostrará <b><u>solo los registros que coinciden o siguen el momento seleccionado por fecha y hora</u></b> del registro que estamos editando (A). Por eso, cuando editamos un registro, el primer registro en la lista siempre será el que estamos editando (B). <br>
+			<br>
+			Ahora, imaginemos que tenemos estos registros, la lista en la ventana principal (azul) muestra todos los registros: <br>
+			<img src="pics/Scheduling_1_ESP.png" class="responsive"/> <br>
+			<br>
+			Para crear o editar registros, usamos otras ventanas. Teal para editar y verde para crear registros: <br>
+			<img src="pics/RecordManagamentSystem_ESP.png" class="responsive"/> <br>
+			<br>
+			Cuando creas o editas un registro, la lista en esas ventanas se actualiza cada vez que cambias la fecha o la hora. La lista mostrará <b><u>solo los registros que coinciden o siguen el momento seleccionado por esa fecha y hora:</u></b>  <br>
+			<img src="pics/List-data_ESP.png" class="responsive"/> <br>
+			Aquí tenemos la misma lista mostrando los registros cuando cambiamos la hora a las 00:00 (izquierda), 12:00 (medio) y 18:00 (derecha). <br>
+			<br>
+			SECURElogBook no permite tener dos registros al mismo tiempo (usa una lista para tener dos o más registros al mismo tiempo). Si la hora para el registro que estás creando o editando ya está siendo utilizada por otro registro, los botones del registro se pondrán rojos: <br>
+			<img src="pics/Scheduling_3_ESP.png" class="responsive"/> <br>
+			Observa que no podemos guardar/copiar (porque los botones del registro están rojos) porque la hora que establecimos para nuestro registro a las 16:25 ya está siendo utilizada por otro registro, el primero en la lista. <br>
+			<br>
+			Los botones del registro se vuelven rojos para advertirte que esta hora ya está siendo ocupada por otro registro. No podrás guardar o copiar ese registro si los botones del registro están rojos. El registro que te impide guardar o copiar será el primero en la lista (puedes mover el registro bloqueante a una hora diferente o elegir otra hora). <br>
+			<br>
+			La otra razón para este comportamiento, donde la lista se actualiza cuando cambiamos la fecha o la hora, es filtrar los registros por hora. Puedes cambiar la hora para filtrar los registros según la hora que elijas; esto te permitirá programar tareas de manera más eficiente. <br>
+			<br>
+			Por ejemplo, si quieres crear una tarea después de las 12:00, puedes establecer la hora a las 12:00. Esto hará que la lista muestre información solo a partir de las 12:00. Ahora podrás ver dónde puedes colocar el nuevo registro: <br>
+			<img src="pics/Scheduling-creator-list_ESP.png" class="responsive"/> <br>
+			<br>
+			Puedes ingresar la fecha y hora manualmente. O puedes usar los botones ARRIBA/ABAJO para seleccionar la hora de los registros existentes: <br>
+			<img src="pics/UpDownButtons.png" class="responsive"/> <br>
+			El botón ARRIBA selecciona la hora del registro anterior. El botón ABAJO selecciona la hora del siguiente registro. Estos botones copian la hora del primer registro de la lista y la añaden al registro que estás creando o editando. Luego, cuando ambos registros están en la misma hora, puedes añadir o quitar tiempo para colocar perfectamente el registro que estás creando o editando: <br>
+			<img src="pics/Add-time-windows_ESP.png" class="responsive"/> <br>
+			<br>
+			Estas ventanas te ayudan a sumar o restar tiempo sin posibilidad de cometer errores cuando presionas o mantienes presionado este botón <img src="pics/help_time_adder.png" width="40" height="40"/>, lo que te permite programar registros con precisión en segundos. <br>
+			<br>
+			Digamos que quieres mover un registro para que esté a cierta hora antes o después de otro registro. Por ejemplo, quiero colocar "Sacar la basura" 5 minutos antes de "Encontrarme con un amigo en el bar". <br>
+			<img src="pics/Scheduling_1_ESP.png" class="responsive"/> <br>
+			<br>
+			Y sí, puedes editar "Sacar la basura", hacer un cálculo sencillo y darte cuenta de que debes establecer el registro a las 12:15. Pero también puedes hacer lo mismo con cualquier valor de tiempo y sin cálculos mentales ni errores. <br>
+			<br>
+			Permíteme mostrarte cómo hacerlo: <br>
+			<br>
+			Puedes practicar este ejemplo creando 3 registros. Luego moveremos el último 5 minutos antes del primero. <br>
+			</i>
+			<br>
+			<b>1.</b> Haz clic en el registro que deseas mover; en este caso, "Sacar la basura". <br>
+			<img src="pics/Scheduling_1_ESP.png" class="responsive"/> <br>
+			<br>
+			<b>2.</b> Como queremos mover el registro "Sacar la basura" hacia arriba, debemos presionar el botón ARRIBA <img src="pics/Button-seeker-up.png" width="40" height="40"/>:<br>
+			<img src="pics/Scheduling_2_ESP.png" class="responsive"/> <br>
+			<br>
+			Esto establecerá nuestro registro con la hora del registro anterior: <br>
+			<img src="pics/Scheduling_3_ESP.png" class="responsive"/> <br>
+			Observa que no podemos guardar/copiar (porque los botones del registro están en rojo) porque la hora que establecimos para nuestro registro a las 16:25 ya está siendo utilizada por otro registro, el primero en la lista. <br>
+			<br>
+			<b>3.</b> Presiona el botón ARRIBA <img src="pics/Button-seeker-up.png" width="40" height="40"/>:<br>
+			<img src="pics/Scheduling_4_ESP.png" class="responsive"/> <br>
+			<br>
+			Ahora, el registro que estamos editando, "Sacar la basura", y el registro que vamos a usar como referencia, "Encontrarme con un amigo en el bar", están configurados a la misma hora, 12:20. <br>
+			<br>
+			Ahora podemos añadir o quitar cualquier valor de tiempo para crear exactamente el espacio que queremos entre esos registros. <br>
+			<br>
+			<b>4.</b> Mantén presionado el botón <img src="pics/help_time_adder.png" width="40" height="40"/> e introduce "-5" minutos: <br>
+			<img src="pics/Scheduling_5_ESP.png" class="responsive"/> <br>
+			<br>
+			Ahora nuestro registro se establece automáticamente 5 minutos antes del siguiente registro: <br>
+			<img src="pics/Scheduling_6_ESP.png" class="responsive"/> <br>
+			<br>
+			<b>5.</b> Para guardar el registro y volver atrás, presiona el botón indicado con la flecha amarilla (imagen de arriba). <br>
+			<br>
+			<b>6.</b> Presiona el botón de retroceso en tu teléfono para volver a la ventana principal: <br>
+			<img src="pics/Scheduling_7_ESP.png" class="responsive"/> <br>
+			<br>
+			Como podemos ver, hemos movido el registro con precisión completa, rápidamente, sin cálculos mentales ni errores. Ahora el espacio de tiempo entre los registros es de 5 minutos, y podemos verlo gracias a las funciones inteligentes de SECURElogBook. <br>
+			<br>
+			Con este conocimiento, tendrás un control completo sobre el tiempo. Sí, este superpoder solo puede controlar tu tiempo, pero es mucho más de lo que la mayoría de las personas que no usan SECURElogBook tienen. 😉<br>
+			<br>
+        </div>
+    </body>
+</html>
