@@ -478,43 +478,49 @@
 	Aunque una lista infinita con todos tus datos podría parecer una gran idea, rápidamente la idea se vuelve abrumadora sin un sistema que proporcione contexto para ayudarte a entender los datos. <br>
 	<br>
 	Esencialmente, los contadores de tareas en SECURElogBook proporcionan información crucial a través de una representación visual e intuitiva que combina colores, números, tiempo y tamaños: <br> 
-	<img src="pics/TaskCounterExplanation.png" class="responsive"/><br>
+	<img src="pics/TaskCounterExplanation.jpg" class="responsive"/><br>
 	<section class="times-section">
-		<i>Registros pasados no completados (A), hoy (B) y mañana (C).</i> <br>
+	<i>P1 (pasado), P2 (presente) y F (futuro).</i><br>
 	</section>
 	<br>
-	Los contadores de tareas, en la esquina superior izquierda de SECURElogBook, muestran el número de: <br>
+	Básicamente, los contadores de tareas dividen la línea de tiempo en 3 áreas: <br>
 	<br>
-	&emsp;<b>. Amarillo =</b> Registros sin completar. <br>
-	&emsp;<b>. Rojo (primero) =</b> Registros en menos de 1h (registros con barra roja corta). <br>
-	&emsp;<b>. Rojo (segundo) =</b> Registros después de 1h y hasta 8h. (registros con barra roja a la mitad). <br>
-	&emsp;<b>. Rojo (tercero) =</b> Total de registros activos para hoy. <br>
-	&emsp;<b>. Azul =</b> Registros para mañana. <br>
+	&#160;&#160;&#160;<b>. A =</b> Registros AMARILLOS = Registros no completados (pasado). <br>
+	&#160;&#160;&#160;<b>. B =</b> Registros con barra ROJA = Registros de hoy. <br>
+	&#160;&#160;&#160;<b>. C =</b> Registros con barra AZUL = Registros de mañana. <br>
 	<br>
-	Ahora que sabes cómo funciona el sistema de contadores de tareas, planificar tu día se vuelve más fácil. En poco tiempo, podrás evaluar cuántas tareas puedes manejar. Con SECURElogBook, puedes actuar para que un dia con muchas tareas sea menos problematico. <br>
+	SECURElogBook dará especial importancia a los registros de hoy, aquellos con una barra roja. Por esta razón, la aplicación los divide en tres contadores: <br>
 	<br>
-	Si nuestro contador de tareas muestra estos valores <b>[<span style="background-color: yellow; color: black;">1</span><span style="background-color: red; color: white;"> 1</span><span style="background-color: red; color: white;">1</span><span style="background-color: red; color: white;">3 </span><span style="background-color: blue; color: white;">1</span>]</b>
+	&#160;&#160;&#160;<b>. Primero</b> (rojo brillante) <b>=</b> Número de registros futuros en menos de 1h. <br>
+	&#160;&#160;&#160;<b>. Segundo</b> (rojo oscuro) <b>=</b> Número de registros futuros entre después de 1 hora y antes de 8 horas. <br>
+	&#160;&#160;&#160;<b>. Tercero</b> (rojo brillante) <b>=</b> Número total de registros pendientes para hoy (B). <br>
+	<br>
+	Ahora que sabes cómo funciona el sistema de contadores de tareas, programar tu día se vuelve más fácil. En poco tiempo, podrás evaluar cuántas tareas puedes manejar. Con SECURElogBook, puedes reaccionar para hacer que un día con muchas tareas sea menos problemático. <br>
+	<br>
+	Si nuestro contador de tareas muestra estos valores <b>[<span style="background-color: yellow; color: black;">&#160;0&#160;</span><span style="background-color: rgb(255, 70, 70); color: white;">&#160;1&#160;</span><span style="background-color: rgb(177, 17, 17); color: white;">&#160;3&#160;</span><span style="background-color: rgb(255, 70, 70); color: black;">&#160;6&#160;</span><span style="background-color: rgb(69, 69, 186); color: black;">&#160;0&#160;</span>]</b>
 	eso significa: <br>
 	<br>
-	&emsp;<b>. Amarillo =</b> Hay 1 cosa pendiente que debo revisar lo antes posible. <br>
-	&emsp;<b>. Rojo (primero) =</b> Tengo 1 tarea que hacer en menos de 1h (registro con barra roja corta). <br>
-	&emsp;<b>. Rojo (segundo) =</b> Hay 1 tarea que necesito hacer después de 1h y en menos de 8h. (registro con barra roja media). <br>
-	&emsp;<b>. Rojo (tercero) =</b> Quedan 3 tareas para hoy. <br>
-	&emsp;<b>. Azul =</b> Mañana tendré 1 tarea que hacer. <br>
+	&emsp;<b>. Amarillo =</b> No hay registros para revisar. <br>
+	&emsp;<b>. Rojo (primero/rojo brillante) =</b> Tengo 1 tarea para hacer en menos de 1h. <br>
+	&emsp;<b>. Rojo (segundo/rojo oscuro) =</b> Hay 3 tareas entre después de 1 hora y antes de 8 horas. <br>
+	&emsp;<b>. Rojo (tercero/rojo brillante) =</b> El número total de tareas para hoy es 6. <br>
+	&emsp;<b>. Azul =</b> Mañana tendré 0 tareas para hacer. <br>
 	<br>
-	Ahora, puedes usar la información de los contadores de tareas para encontrar lo que buscas dentro de la lista: <br>
-	<img src="pics/TaskCounterList.png" class="responsive"/><br>
+	Desde la versión 1.8, las barras para los registros de hoy y mañana son dinámicas, lo que significa que adaptarán su tamaño para ser proporcionales al tiempo restante hasta que el registro se active: <br>
+	<img src="pics/Records-new-bars.png" class="responsive"/><br>
+	<section class="times-section">
+	<i>Los registros resaltados en amarillo se activarán aproximadamente al mismo tiempo porque sus barras de tiempo son similares en tamaño.</i><br>
+	</section>
 	<br>
-	&emsp;<b>. Contador amarillo =></b> Registros amarillos. <br>
-	&emsp;<b>. Contador rojo (primero) =></b> Registros con barra roja corta. <br>
-	&emsp;<b>. Contador rojo (segundo) =></b> Registros con barra roja media. <br>
-	&emsp;<b>. Contador azul =></b> Registros con barra azul. <br>
+	Ahora, los registros configurados para activarse alrededor del mismo tiempo tendrán barras de tamaño similar. Por lo tanto, no es necesario comparar los valores de tiempo para determinar si hay un conflicto de tiempo entre los registros, ya que puedes verlo visualmente cuando las barras de tiempo de los registros son similares (resaltadas en amarillo). <br>
 	<br>
-	Este sistema te permite identificar rápidamente lo que buscas, incluso si tienes miles de registros en tu SECURElogBook. <br>
+	<u>Con SECURElogBook, puedes identificar rápidamente posibles conflictos de tiempo simplemente mirando el tamaño de las barras de tiempo para ver si hay registros configurados para activarse alrededor del mismo tiempo.</u> <br>
 	<br>
-	<b>El sistema de contadores de tareas de SECURElogBook está diseñado para optimizar tu planificación diaria, haciéndola no solo más fácil y rápida sino también más eficiente.</b> Puedes usar los valores de los contadores de tareas como tu valor de densidad de carga de trabajo. En otras palabras, te permitirá ver cuando estás sobrecargado con demasiadas cosas que hacer. Con el tiempo, los datos te permitirán ver cuando estás trabajando demasiado duro. Ahora, gracias a SECURElogBook podrás identificar la situación y solucionarla para prevenir problemas de salud. <br>
+	Este sistema te permite identificar rápidamente lo que estás buscando, incluso si tienes miles de registros en tu SECURElogBook. <br>
 	<br>
-	Al usar los valores de los contadores de tareas como una métrica de densidad de carga de trabajo, puedes identificar fácilmente cuando estás abrumado con tareas. <b>Con el tiempo, la información del contador de tareas te ayudará a reconocer cuando te estás esforzando demasiado. Gracias a SECURElogBook, podrás abordar proactivamente tales situaciones para prevenir errores y problemas de salud.</b> <br>
+	<b>El sistema de contadores de tareas de SECURElogBook está diseñado para agilizar tu programación diaria, haciéndola no solo más fácil y rápida, sino también más eficiente.</b> Puedes usar los valores de los contadores de tareas como tu valor de densidad de carga de trabajo. En otras palabras, te permitirá ver cuándo estás sobrecargado con demasiadas cosas por hacer. Con el tiempo, los datos te permitirán ver cuándo estás trabajando demasiado. Ahora, gracias a SECURElogBook, podrás identificar la situación y solucionarla para prevenir problemas de salud. <br>
+	<br>
+	Al usar los valores de los contadores de tareas como una métrica de densidad de carga de trabajo, puedes identificar fácilmente cuándo estás abrumado con tareas. <b>Con el tiempo, la información de los contadores de tareas te ayudará a reconocer cuándo te estás esforzando demasiado. Gracias a SECURElogBook, podrás abordar proactivamente tales situaciones para evitar cometer errores y problemas de salud.</b> <br>
 	<br>
 	<br>
 
