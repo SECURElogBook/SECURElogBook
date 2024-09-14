@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+          body {
+            background-color: rgb(245, 245, 255);
+          }
+        </style>        
+    </head>
+
+    <style>
+        
+        body {
+          font-family: "Arial", sans-serif;
+		      font-size: 150%;
+        }
+        
+        div.a {
+          text-align: center;
+        }
+        
+        div.b {
+          text-align: left;
+        }
+        
+        div.c {
+          text-align: right;
+        } 
+        
+        div.d {
+          text-align: justify;
+        }
+        
+        .responsive {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+
+        .times-section {
+            font-family: "Times New Roman", serif;
+        }
+        
+    </style>
+    
+    <body>
+        <div class="b">
+            <span style="font-size: 1.5em;"> <a href="https://securelogbook.github.io/SECURElogBook/web-spanish.html">⏮</a></span>
+			<span style="font-size: 2.0em;"><u><b>11. Importar/Exportar (copia de seguridad)</b></u></span> <br>
+			<br>
+			SECURElogBook proporciona una forma única y segura de importar y exportar información sin necesidad de permiso para acceder a su dispositivo. Además, funciona sin conexión a internet. <br>
+			<br>
+			Básicamente, la ventana de Importar/Exportar puede transformar la información de SECURElogBook en texto (registros, datos del menú Favoritos y datos de tiempos de usuario). También puede leer la información para recrear registros, datos del menú Favoritos y datos de tiempos de usuario. Así, puede almacenar este texto para crear copias de seguridad de sus datos de SECURElogBook. <br>
+			<br>
+			Esta función le permite compartir registros de entrenamiento, crear registros de ingesta de medicamentos para otros. También puede exportar, editar y volver a importar su información. Puede usar unidades USB o cualquier software de comunicación basado en internet para transferir sus datos de manera segura. <br>
+			<br>
+			SECURElogBook puede almacenar hasta 18,446,744,073,709,551,616 registros. Con la capacidad de crear copias de seguridad, la capacidad de almacenamiento es prácticamente ilimitada. <br>
+			<br>
+			Evitaré almacenar información en servicios en la nube ya que algunas empresas pueden tener acceso a su información. Si usa un servicio en la nube para almacenar información, asegúrese de que esté cifrada. 7Zip es un software gratuito para Windows que le permitirá cifrar sus archivos. <br>
+			<br>
+			La mejor práctica para almacenar sus datos es tener su información cifrada en 3 unidades USB locales diferentes separadas por 27m. <br>
+			<br>
+			Como siempre, mi deber es tratar de explicar todo, incluso cuando SECURElogBook es muy fácil de usar ya que todo sigue la lógica. Pero cuanto más sepa, más podrá hacer 😉<br>
+			<br>
+			Cosas que necesita saber sobre el sistema de Importar/Exportar: <br>
+			<br>
+			<b>1.</b> Una vez que salga de la ventana, la información se elimina del portapapeles para evitar que otras aplicaciones accedan a sus datos. <br>
+			<br>
+			<b>2.</b> El sistema resaltará lo último que hizo poniéndolo en naranja: <br>
+			<img src="pics/IEdata_2_ESP.png" class="responsive"/> <br>
+			<br>
+			Aquí podemos ver que hemos presionado el botón EXPORTAR DATOS y ya hemos copiado el primer bloque de datos, ya que ambos están en naranja ahora. <br>
+			<br>
+			<b>3.</b> Cuando presionamos el botón IMPORTAR, el programa revisará la información antes de usarla. <br>
+			<br>
+			El fondo del cuadro de texto le informará si se detectó un problema o no: <br>
+			<br>
+			&emsp;. Fondo verde => Todo OK. <br>
+			&emsp;. Fondo naranja => Uno o más registros tienen problemas y no se han añadido. Información adicional le ayudará a identificar el problema. <br>
+			&emsp;. Fondo rojo = ERROR. El programa encontró grandes problemas y no se transfirió ningún dato. <br>
+			<br>
+			Si no cambió la información y experimenta un problema durante el proceso, verifique el programa que está utilizando para copiar y pegar la información. <br>
+			<br>
+			Si el programa no puede copiar/pegar <u>toda la información</u> “romperá” los datos y creará problemas. <br>
+			<br>
+			La forma más fácil de almacenar su información es crear documentos borrador en Gmail o Outlook, luego puede crear archivos de texto a partir de ellos usando una computadora. <br>
+			<br>
+			<b>4.</b> El programa divide sus datos en pequeños bloques de datos para permitir copiar y pegar la información entre programas. Cuantos más registros tenga, más bloques de datos se crearán. <br>
+			<br>
+			Cada bloque de datos le dice todo lo que necesita saber dentro de su encabezado. Después del encabezado encontraremos los datos. <br>
+			<br>
+			Los datos son como un archivo CSV (Valores Separados por Comas) donde la coma se reemplaza por “√” y las líneas de ruptura se reemplazan por “~”. Los archivos CSV se pueden editar usando Excel para crear una tabla. <br>
+			<br>
+			Estructura de archivos de SECURElogBook: <br>
+			<br>
+			&emsp;. Información del encabezado (primeras 2 líneas): <br>
+			&emsp; &emsp;<span style="background-color: yellow; color: black;">. PRIMERO, Información sobre los datos.</span><br>
+			&emsp; &emsp;<span style="background-color: yellow; color: black;">. SEGUNDO, encabezados de columnas de la tabla.</span><br>
+			<br>
+			&emsp;. Datos: <br>
+			&emsp; &emsp;<span style="background-color: rgb(0, 188, 0); color: black;">. Registros, información que comienza con un número largo.</span><br>
+			&emsp; &emsp;<span style="background-color: turquoise; color: black;">. Datos del menú Favoritos, información que comienza con “tasks_”.</span><br>
+			&emsp; &emsp;<span style="background-color: gray; color: black;">. Datos de tiempo de usuarios que comienzan con “users_time_”.</span><br>
+			<br>
+			<img src="pics/IEdata_5_ESP.png" class="responsive"/> <br>
+			<br>
+			Por cierto, no necesita saber esta información. Será útil si desea editar su información y volver a ingresarla en la aplicación. <br>
+			<br>
+			Una vez que exportamos la información, podemos almacenarla donde queramos ya que es solo texto. <br>
+			<br>
+			Por razones técnicas, los datos se dividen en pequeños bloques de alrededor de 120kb. <br>
+			<br>
+			<b>5.</b> Cada vez que mantenga presionado un bloque de datos, se resaltará en naranja para informarle dónde se encuentra en el proceso de copiar información. <br>
+			<br>
+			<b>6.</b> Cuando exportamos información de SECURElogBook para crear una copia de seguridad, se indicará el número total de registros. Así que puede comparar ese valor con el valor mostrado en el último bloque de datos, el etiquetado con "LAST". Si ambos valores son iguales, significa que todo salió bien. <br>
+			<br>
+			<b>7.</b> SECURElogBook no admite copias de seguridad automáticas ni migración a un nuevo dispositivo. Para transferir sus datos de SECURElogBook a otro dispositivo, debe usar la aplicación SECURElogBook. Esto significa que necesita exportar sus datos del dispositivo antiguo y luego importarlos al nuevo dispositivo. Este proceso asegura que sus datos permanezcan bajo su control. <br>
+			<br>
+			<b>8.</b> Puede editar la información usando un editor de texto como NotePad o similar. Así que puede usar un editor de texto para hacer cambios en su información y luego agregarla nuevamente. <br>
+			<br>
+			No agregue ni cambie estos símbolos: <br>
+			&emsp;√ = separador de comas. <br>
+			&emsp;~ = línea de ruptura. <br>
+			<br>
+			SECURElogBook usa esos símbolos para codificar y decodificar la información. <br>
+			<br>
+			<b>9.</b> SECURElogBook no permitirá tener dos o más registros con la misma fecha y hora, es decir, con la misma marca de tiempo. <br>
+			<br>
+			<b>10.</b> Dos o más registros pueden tener la misma marca de tiempo (fecha y hora) solo después de importarlos sobre registros existentes. Será muy raro, pero puede suceder si: <br>
+			<br>
+			&emsp;. Importamos registros de otra persona y algunos comparten la misma fecha y hora. <br>
+			&emsp;. Porque importamos los mismos datos más de una vez. <br>
+			<br>
+			Si esto sucede, SECURElogBook vinculará los registros cuando los edite/elimine. <br>
+			<br>
+			Cuando elimine un registro, eliminará todos los registros con esa fecha y hora específicas. Si edita un registro que tiene otros registros con la misma fecha y hora, solo mantendrá el primer registro y eliminará todas las demás copias. <br>
+			<br>
+			La forma más segura de lidiar con este problema es: <br>
+			<br>
+			&emsp;<b>1.</b> Exportar los registros afectados. Puede usar el sistema de búsqueda. <br>
+			&emsp;<b>2.</b> Editar su valor de marca de tiempo para hacerlos diferentes. Asegúrese de que los valores de marca de tiempo sean únicos. <br>
+			&emsp;<b>3.</b> Eliminar los registros con fallos dentro de SECURElogBook. <br>
+			&emsp;<b>4.</b> Importar los editados. <br>
+			&emsp;<b>5.</b> Cambiar la hora/fecha de los registros. <br>
+			<br>
+			Esto rara vez sucederá, pero ahora sabe cómo solucionar el problema si le sucede. Obviamente, ya estoy trabajando en una función de importación segura para prevenir este problema. <br>
+			<br>
+			Ahora sabe un poco más sobre cómo funciona SECURElogBook. No es complicado ya que usa lógica en todas partes, pero necesita conocer algunas reglas básicas. <br>
+			<br>
+			<br>
+			<br>
+			<b><u>EXPORTAR</u></b><br>
+			<br>
+			<u>Para proteger sus datos, la información copiada se eliminará si sale de la ventana de Importar/Exportar.</u> <br>
+			<br>
+			<b>1.</b> Presione <img src="pics/Settings-icon.png" width="40" height="40"/> en la ventana principal (azul) para abrir la ventana de Configuración. <br>
+			<b>2.</b> Presione el botón IMPORTAR/EXPORTAR DATOS. <br>
+			<b>3.</b> Presione el botón EXPORTAR DATOS. Permita que el programa trabaje: <br>
+			<img src="pics/IEdata_1_ESP.png" class="responsive"/> <br>
+			<br>
+			Una vez que el proceso se complete, verá todos los bloques que podemos almacenar externamente: <br>
+			<img src="pics/IEdata_2_ESP.png" class="responsive"/> <br>
+			<br>
+			Cuantos más registros tenga, más bloques de datos se crearán. En este caso tenemos 2 bloques de datos. <br>
+			<br>
+			Podemos ver que tenemos un total de 319 registros. <br>
+			<br>
+			Recuerde, el color naranja se usa para informarle lo que está haciendo. En este momento, podemos ver que presionamos el botón EXPORTAR DATOS ya que está en naranja. <br>
+			<br>
+			<b>4.</b> Copie la información del primer bloque de datos manteniéndolo presionado. <br>
+			<img src="pics/IEdata_3_ESP.png" class="responsive"/> <br>
+			<br>
+			El primer bloque de datos se volverá naranja, informándonos que sus datos han sido copiados. <br>
+			<br>
+			<b>5.</b> Pegue los datos en cualquier editor de texto. Si no tiene un programa de editor de texto, use Gmail o Outlook para crear archivos borrador. Verá algo como esto: <br>
+			<img src="pics/IEdata_5_ESP.png" class="responsive"/> <br>
+			<br>
+			<span style="background-color: yellow; color: black;">. Información del encabezado.</span><br>
+			<span style="background-color: rgb(0, 188, 0); color: black;">. Información de registros.</span><br>
+			<span style="background-color: turquoise; color: black;">. Datos del menú Favoritos.</span><br>
+			<span style="background-color: gray; color: black;">. Datos de tiempo de usuarios.</span><br>
+			<br>
+			La primera línea del encabezado contiene la información del bloque para informarle de dónde proviene esta información. <br>
+			<br>
+			<b>6.</b> Guarde la información como un archivo de texto. <br>
+			<b>7.</b> Copie la información del siguiente bloque de datos manteniéndolo presionado. <br>
+			<b>8.</b> Repita el paso 5 hasta que no queden más bloques de datos por copiar. <br>
+			<b>9.</b> Asegúrese de almacenar la información en un lugar seguro. <br>
+			<br>
+			<br>
+			<br>
+			<b><u>IMPORTAR</u></b>
+			<br>
+			<b>1.</b> Presione <img src="pics/Settings-icon.png" width="40" height="40"/> en la ventana principal (azul) para abrir la ventana de Configuración. <br>
+			<b>2.</b> Presione el botón IMPORTAR/EXPORTAR DATOS. <br>
+			<img src="pics/IEdata_4_ESP.png" class="responsive"/> <br>
+			<br>
+			<b>3.</b> Abra el primer archivo de respaldo que se verá así: <br>
+			<img src="pics/IEdata_5_ESP.png" class="responsive"/> <br>
+			<br>
+			<span style="background-color: yellow; color: black;">. Información del encabezado.</span><br>
+			<span style="background-color: rgb(0, 188, 0); color: black;">. Información de registros.</span><br>
+			<span style="background-color: turquoise; color: black;">. Datos del menú Favoritos.</span><br>
+			<span style="background-color: gray; color: black;">. Datos de tiempo de usuarios.</span><br>
+			<br>
+			Todos los archivos deben tener un encabezado, con 2 líneas. Debajo del encabezado podemos encontrar datos de: registros, información del menú Favoritos y datos de tiempo de usuarios. La información del menú Favoritos y los datos de tiempo de usuarios normalmente están al final del último archivo. <br>
+			<br>
+			Solo si el archivo de respaldo contiene información del menú Favoritos o datos de tiempo de usuarios, esa información se actualizará. Esta información está al final del último bloque de datos. <br>
+			<br>
+			<b>4.</b> Copie toda la información dentro del archivo. <u>No copiar toda la información del archivo puede crear problemas.</u><br>
+			<br>
+			<b>5.</b> Presione el botón PEGAR DATOS: <br>
+			<img src="pics/IEdata_6_ESP.png" class="responsive"/> <br>
+			<br>
+			<b>6.</b> Permita que se peguen los datos: <br>
+			<img src="pics/IEdata_7_ESP.png" class="responsive"/> <br>
+			<br>
+			Una vez que el proceso se complete, veremos la información dentro del cuadro de texto: <br>
+			<img src="pics/IEdata_8_ESP.png" class="responsive"/> <br>
+			<br>
+			Observe cómo el botón PEGAR DATOS ahora está en naranja, para indicar que hemos pegado la información. Además, el texto le permite leer el encabezado para saber qué información del archivo se pegó. Este pequeño detalle le permitirá saber qué está haciendo en todo momento. Así que es fácil ver que acabamos de pegar “BLOQUE DE DATOS: 1”. <br>
+			<br>
+			<b>7.</b> Presione importar datos y permita que SECURElogBook complete el trabajo: <br>
+			<img src="pics/IEdata_9_ESP.png" class="responsive"/> <br>
+			<br>
+			SECURElogBook verificará la información antes de agregarla a la aplicación. <br>
+			<br>
+			Una vez que el proceso se complete, veremos la información dentro del cuadro de texto: <br>
+			<img src="pics/IEdata_10_ESP.png" class="responsive"/> <br>
+			<br>
+			Observe cómo el botón IMPORTAR DATOS ahora está en naranja, para indicar que hemos importado la información. Además, el texto le permite leer el encabezado para saber qué información del archivo se importó. Este pequeño detalle le permitirá saber qué está haciendo en todo momento. Es fácil ver que acabamos de importar “BLOQUE DE DATOS: 1”. <br>
+			<br>
+			El fondo del cuadro de texto le informará si se detectó un problema o no: <br>
+			<br>
+			&emsp;. Fondo verde => Todo OK. <br>
+			&emsp;. Fondo naranja => Uno o más registros tienen problemas y no se han añadido. Información adicional le ayudará a identificar el problema. <br>
+			&emsp;. Fondo rojo = ERROR. El programa encontró grandes problemas y no se transfirió ningún dato. <br>
+			<br>
+			<b>8.</b> Si hay más archivos, abra el siguiente archivo de respaldo y vaya al paso 4. <br>
+			<br>
+			<section class="times-section">
+			  <i>
+				La información dentro del cuadro de texto le permitirá saber si importamos todos los registros con éxito. Puede comparar el número teórico de registros a importar con el real. <br>
+				<br>
+				El encabezado del último archivo le indica el número total teórico de registros a importar (“Número de registros = ”). Si presiona el botón EXPORTAR DATOS, el cuadro de texto indicará cuántos registros tiene actualmente. Ambos valores deben coincidir. Si los valores no coinciden es porque tuvimos un problema con el proceso de copiar/pegar. Tal vez olvidó importar un archivo. Tal vez hay un problema con el software utilizado para crear los archivos o el programa de texto no puede copiar toda la información. <br>    
+			  </i>
+			  </section>
+			<br>
+        </div>
+    </body>
+</html>
