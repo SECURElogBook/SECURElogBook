@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+          body {
+            background-color: rgb(245, 245, 255);
+          }
+        </style>        
+    </head>
+
+    <style>
+        
+        body {
+          font-family: "Arial", sans-serif;
+		      font-size: 150%;
+        }
+        
+        div.a {
+          text-align: center;
+        }
+        
+        div.b {
+          text-align: left;
+        }
+        
+        div.c {
+          text-align: right;
+        } 
+        
+        div.d {
+          text-align: justify;
+        }
+        
+        .responsive {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+
+        .times-section {
+            font-family: "Times New Roman", serif;
+        }
+        
+    </style>
+    
+    <body>
+        <div class="b">
+            <span style="font-size: 1.5em;"> <a href="https://securelogbook.github.io/SECURElogBook/web-english.html">⏮</a></span>
+            <span style="font-size: 2.0em;"><u><b>1. Import/Export (backup)</b></u></span> <br>
+            <br>
+SECURElogBook offers a unique and secure system for importing and exporting information without needing permission to access your device. It also doesn’t require an internet connection. <br>
+<br>
+Basically, the Import/Export window is able to transform SECURElogBook information into text (records, Favourite menu’s data and user times data). It can also read the information to recreate records, Favourite menu’s data and user times data. So, you can store this text to create backups of your SECURElogBook data. <br>
+<br>
+This feature lets you share workout records, create medication intake records for others. You can also export, edit, and re-import your information. You can use USB drives or any internet-based communication software to transfer your data securely. <br>
+<br>
+SECURElogBook can store up to 18,446,744,073,709,551,616 records. With the ability to create backup copies, the storage capacity is virtually unlimited. <br>
+<br>
+I will avoid storing information on cloud services as some companies can have access to your information. If you use a cloud service to store information, make sure it is encrypted. 7Zip is free software for Windows that will allow you to encrypt your files. <br>
+The best practice is to have your information encrypted in 3 different local USB/drives separated by 27m. <br>
+<br>
+Like always, my duty is to try to explain everything, even when SECURElogBook is very easy to use as everything follows logic. But the more you know the more you can do 😉<br>
+<br>
+Things you need to know about the Import/Export system: <br>
+<br>
+<b>1.</b> Once you exit the window, the information is removed from the clipboard to prevent other applications from accessing your data. <br>
+<br>
+<b>2.</b> The system will highlight the last thing you did by turning it orange: <br>
+<img src="pics/IEdata_2_ENG.png" class="responsive"/> <br>
+<br>
+Here we can see that we have pressed the EXPORT DATA button and have already copied the first block of data, as both are orange now. <br>
+<br>
+<b>3.</b> When we press the IMPORT button, the program will review the information before it uses it. <br>
+<br>
+The background of the text box background will let you know if an issue was detected or not: <br>
+<br>
+&emsp;. Green background => All OK. <br>
+&emsp;. Orange background => One or more records have issues and they have not been added. Additional information will help you to identify the issue. <br>
+&emsp;. Red background = ERROR. The program found big issues and no data was transfer. <br>
+<br>
+If you did not change the information and you experience an issue during the process, check the program you are using to copy and paste the information. <br>
+<br>
+If the program is not able to copy/paste <u>all the information</u> it will “break” the data and it will create issues. <br>
+<br>
+The easiest way to store your information is creating draft documents in Gmail or Outlook, then you can create text files from it using a computer. <br>
+<br>
+<b>4.</b> The program splits your data in small blocks of data to allow to copy and paste the information between programs. The more records you have the more blocks of data will be created. <br>
+<br>
+Each block of data tells you all you need to know inside its header. After the header we will find the data. <br>
+<br>
+The data is like a CSV (Comma-Separated Values) file where the coma is replaced by “√” and break lines are replaced by “~”. CSV files can be edited using Excel to create a table. <br>
+<br>
+SECURElogBook file structure: <br>
+<br>
+&emsp;. Header information (first 2 lines): <br>
+&emsp; &emsp;<span style="background-color: yellow; color: black;">. FIRST, Information about the data.</span><br>
+&emsp; &emsp;<span style="background-color: yellow; color: black;"> . SECOND, column table headers.</span><br>
+<br>
+&emsp;. Data: <br>
+&emsp; &emsp;<span style="background-color: yellow; color: black;">. Records, information that starts with a long number.</span><br>
+&emsp; &emsp;<span style="background-color: yellow; color: black;">. Favourite menu's data, information that starts with “tasks_”.</span><br>
+&emsp; &emsp;<span style="background-color: yellow; color: black;">. Users time data that starts with “users_time_”.</span><br>
+<br>
+<img src="pics/IEdata_5_ENG.png" class="responsive"/> <br>
+<br>
+By the way, you don't need to know this information. It will be useful if you want to edit your information and put it back into the app. <br>
+<br>
+Once we export the information, we can store it where ever we want as it is just text. <br>
+<br>
+For technical reasons data is split in small blocks of around 120kb. <br>
+<br>
+<b>5.</b> Each time you long press on a block of data, it will be highlighted in orange to let you know where you are in the process of copying information. <br>
+<br>
+<b>6.</b> When we export information from SECURElogBook to create a backup, the total number of records will be indicated. So you can compare that value with the value shown in the last block of data, the one labeled with "LAST". If both values are the same, that means all went OK. <br>
+<br>
+<b>7.</b> SECURElogBook does not support automatic backups or migration to a new device. To transfer your SECURElogBook data to another device, you must use the SECURElogBook application. This means you need to export your data from the old device and then import it to the new device. This process ensures that your data remains under your control. <br>
+<br>
+<b>8.</b> You can edit the information using a text editor like NotePad or similar. So, you can text editor to make changes to your information and then add it back. <br>
+<br>
+Do not add or change these symbols: <br>
+&emsp;√ = coma separator. <br>
+&emsp;~ = break line. <br>
+<br>
+SECURElogBook uses those symbols to code and decode the information. <br>
+<br>
+<b>9.</b> SECURElogBook will not allow to have two or more records with the same date and time, that means having the same timestamp. <br>
+<br>
+<b>10.</b> Two or more records can have the same timestamp (date and time) only after we import them over existing records. It will be very rare, but it can happen if: <br>
+<br>
+&emsp;. We imported records from someone else and some share the same time and date. <br>
+&emsp;. Because we import the same data more than one time. <br>
+<br>
+If this happens SECURElogBook will link records when you edit/delete them. <br>
+<br>
+When you delete a record, it will delete all records with that specific time and date. If you edit a record that has other records with the same time and date, it will keep only the first record and delete all other copies. <br>
+<br>
+The safest way to deal with this issue is: <br>
+<br>
+&emsp;<b>1.</b> Export the affected records. You can use the search system. <br>
+&emsp;<b>2.</b> Edit their timestamp value to make them different. Make sure the timestamp values are unique. <br>
+&emsp;<b>3.</b> Delete the glitched records inside SECURElogBook. <br>
+&emsp;<b>4.</b> Import the edited ones. <br>
+&emsp;<b>5.</b> Change records time/date. <br>
+<br>
+This will rarely happen, but now you know how to fix the problem if it happens to you. Obviously, I am already working in a safe import feature to prevent this issue. <br>
+<br>
+Now you know a little bit more about how SECURElogBook works. It is not complicated as it uses logic everywhere, but you need to know some basic rules. <br>
+<br>
+<br>
+<br>
+<b><u>EXPORT</u></b><br>
+<br>
+<u>To protect your data, the copied information will be deleted if you leave the Import/Export window.</u> <br>
+<br>
+<b>1.</b> Press <img src="pics/Settings-icon.png" width="40" height="40"/> in the main window (blue) to open the Settings window. <br>
+<b>2.</b> Press IMPORT/EXPORT DATA button. <br>
+<b>3.</b> Press EXPOR DATA button. Allow the program to work: <br>
+<img src="pics/IEdata_1_ENG.png" class="responsive"/> <br>
+<br>
+Once the process is completed you will see all the blocks that we can store externally: <br>
+<img src="pics/IEdata_2_ENG.png" class="responsive"/> <br>
+<br>
+The more records you have the more data blocks will be created. In this case we have 2 data blocks. <br>
+<br>
+We can see that we have a total of 319 records. <br>
+<br>
+Remember, the orange colour is used to let you know what you are doing. Right now, we can see that we pressed EXPORT DATA button as it is orange. <br>
+<br>
+<b>4.</b> Copy the information from the first data block by holding it down. <br>
+<img src="pics/IEdata_3_ENG.png" class="responsive"/> <br>
+<br>
+The first data block will turn orange, letting us know that its data has been copied. <br>
+<br>
+<b>5.</b> Paste the data in any text editor. If you do not have a text editor program, use Gmail or Outlook to create draft files. You will see something like this: <br>
+<img src="pics/IEdata_5_ENG.png" class="responsive"/> <br>
+<br>
+<span style="background-color: yellow; color: black;">. Header information.</span><br>
+<span style="background-color: yellow; color: black;">. Records information.</span><br>
+<span style="background-color: yellow; color: black;"> . Favourite menu's data.</span><br>
+<span style="background-color: yellow; color: black;">. Users time data.</span><br>
+<br>
+The first line of the header contains the block information to let you know where this information comes from. <br>
+<br>
+<b>6.</b> Save the information as a text file. <br>
+<b>7.</b> Copy the information from the next data block by holding it down. <br>
+<b>8.</b> Repeat step 5 until there are no more data blocks to be copied. <br>
+<b>9.</b> Make sure to store the information in a safe place. <br>
+<br>
+<br>
+<br>
+<b><u>IMPORT</u></b>
+<br>
+<b>1.</b> Press <img src="pics/Settings-icon.png" width="40" height="40"/> in the main window (blue) to open the Settings window. <br>
+<b>2.</b> Press  IMPORT/EXPORT DATA button. <br>
+<img src="pics/IEdata_4_ENG.png" class="responsive"/> <br>
+<br>
+<b>3.</b> Open the first backup file that will look like this: <br>
+<img src="pics/IEdata_5_ENG.png" class="responsive"/> <br>
+<br>
+<span style="background-color: yellow; color: black;">. Header information.</span><br>
+<span style="background-color: yellow; color: black;">. Records information.</span><br>
+<span style="background-color: yellow; color: black;"> . Favourite menu's data.</span><br>
+<span style="background-color: yellow; color: black;">. Users time data.</span><br>
+<br>
+All files must have a header, with 2 lines. Below the header we can find data of: records, Favourite menu’s information and users time data. Favourite menu’s information and users time data are normally at the end of last file. <br>
+<br>
+Only if the backup file contains Favourite menu’s information or users time data that information will be updated. This information is at the end of the last block of data. <br>
+<br>
+<b>4.</b> Copy all the information inside the file. <u>Not copying all the information from the file can create issues.</u><br>
+<br>
+<b>5.</b> Press PASTE DATA button: <br>
+<img src="pics/IEdata_6_ENG.png" class="responsive"/> <br>
+<br>
+<b>6.</b> Allow the data to be pasted: <br>
+<img src="pics/IEdata_7_ENG.png" class="responsive"/> <br>
+<br>
+Once the process is completed, we will see the information inside the text box: <br>
+<img src="pics/IEdata_8_ENG.png" class="responsive"/> <br>
+<br>
+Notice how the PASTE DATA button is now orange, to indicate that we pasted the information. Also, the text allow you read the header to know what file information was pasted. This little detail will allow you to know what are you doing at any time. So, it is easy to see that we just pasted “DATA BLOCK: 1”. <br>
+<br>
+<b>7.</b> Press import data and allow SECURElogBook to complete the work: <br>
+<img src="pics/IEdata_9_ENG.png" class="responsive"/> <br>
+<br>
+SECURElogBook will check the information before it is added to the app. <br>
+<br>
+Once the process is completed, we will see the information inside the text box: <br>
+<img src="pics/IEdata_10_ENG.png" class="responsive"/> <br>
+<br>
+Notice how the IMPORT DATA button is now orange, to indicate that we imported the information. Also, the text allow you read the header to know what file information was imported. This little detail will allow you to know what are you doing at any time. It is easy to see that we just imported “DATA BLOCK: 1”. <br>
+<br>
+The background of the text box background will let you know if an issue was detected or not: <br>
+<br>
+&emsp;. Green background => All OK. <br>
+&emsp;. Orange background => One or more records have issues and they have not been added. Additional information will help you to identify the issue. <br>
+&emsp;. Red background = ERROR. The program found big issues and no data was transfer. <br>
+<br>
+<b>8.</b> It there are more files, open the next backup file and go to step 4. <br>
+<br>
+The information inside the text box will allow you to know if we imported all the records successfully. You can compare the theoretical number of records to be imported with the real one. <br>
+<br>
+The header of the last file tells you the theoretical total number of records to be imported (“Records number = ”). If you press the EXPORT DATA button, the text box will indicate how many records you currently have. Both values should match. If the values do not match is because we had a problem with the copy/paste process. Maybe you forgot to import a file. Maybe there is an issue with the software used to create the files or the text program is not able to copy all the information. <br>
+			
+            <br>
+        </div>
+    </body>
+</html>
