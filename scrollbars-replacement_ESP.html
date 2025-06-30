@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+          body {
+            background-color: rgb(245, 245, 255);
+          }
+        </style>        
+    </head>
+
+    <style>
+        
+        body {
+          font-family: "Arial", sans-serif;
+		      font-size: 150%;
+        }
+        
+        div.a {
+          text-align: center;
+        }
+        
+        div.b {
+          text-align: left;
+        }
+        
+        div.c {
+          text-align: right;
+        } 
+        
+        div.d {
+          text-align: justify;
+        }
+        
+        .responsive {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+
+        .times-section {
+            font-family: "Times New Roman", serif;
+        }
+        
+    </style>
+    
+	<body>
+        <div class="b">
+          <span style="font-size: 1.5em;"> <a href="https://securelogbook.github.io/SECURElogBook/web-spanish.html#manuals">⏮</a></span>
+          <span style="font-size: 2.0em;"><u><b>17. Sustitución de la barra de desplazamiento, valor porcentual</b></u></span> <br>
+          <br>
+          Las barras de desplazamiento indican tu posición en la lista calculando la ubicación de la barra. También sugieren el tamaño total de la lista: cuanto más pequeña es la barra, más grande es la lista. El valor porcentual funciona de forma similar pero de manera diferente. Te indica tu posición precisa en la lista. El tamaño de la lista se refleja en qué tan rápido cambia el porcentaje (al desplazarte por una lista grande, el porcentaje aumenta más lentamente que en una lista pequeña).<br>
+          <br>
+          Las barras de desplazamiento se han eliminado porque pueden causar problemas: requieren muchos cálculos para determinar su tamaño y posición cada vez que se desplaza la lista. Esto puede provocar bloqueos si la lista contiene muchos elementos, especialmente cuando esos elementos tienen diferentes tamaños.<br>
+          <br>
+          La nueva solución es un valor porcentual, mostrado en la esquina inferior derecha, para indicar tu posición dentro de la lista. 0% significa que estás en la parte superior de la lista, 50% indica el medio, y 100% marca el final. <br>
+          <br>
+          Este nuevo enfoque ahorra espacio en pantalla y también elimina los problemas causados por cálculos excesivos. Es más rápido y fluido, gracias a operaciones más simples y ligeras. Ahora esta herramienta es incluso más robusta que antes. <br>
+          <br>
+          Este video muestra una lista con 10 elementos. El nuevo sistema muestra 0% en la parte superior de la lista y 100% en la parte inferior. <br>
+          <iframe
+            id="video"
+            width="315"
+            height="560"
+            src="https://www.youtube.com/embed/arlWnmcj9MU?autoplay=1&mute=1&loop=1&playlist=arlWnmcj9MU"
+            frameborder="0"
+            allowfullscreen>
+          </iframe> <br>
+          <br>
+          Finalmente, otra ventaja de este sistema es que los valores porcentuales son más fáciles de recordar que las posiciones de las barras de desplazamiento. <br>
+          <br>
+          Ahora cada lista implementa esta nueva tecnología única en Android. <br>
+          <br>
+          <br>
+        </div>
+    </body>
+</html>
